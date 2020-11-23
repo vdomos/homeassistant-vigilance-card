@@ -8,16 +8,18 @@ Cette carte affiche la vigilance Météo-France en s'appuyant sur l'entité **se
 
 ### Copie des fichiers
 
-Copie du fichier `meteofrance-vigilance.js` et répertoire *img* du dépot dans `<config directory>/www/meteofrance/` de l'instance Home Assistant.
+Copie du fichier `meteofrance-vigilance.js` et répertoire `img` du dépot dans `<config directory>/www/meteofrance/` de l'instance Home Assistant.
 
 **Example:**
 
 ```bash
-wget https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip
+wget -O /tmp/master.zip https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip 
 cd <config directory>/www
-mkdir meteofrance
-cd meteofrance
-# Copier le fichier et le répertoire img du zip
+mkdir -p meteofrance/img/vigilance/
+cd meteofrance/
+unzip -j /tmp/master.zip homeassistant-vigilance-card-master/meteofrance-vigilance.js
+cd img/vigilance/
+unzip -j /tmp/master.zip homeassistant-vigilance-card-master/img/vigilance/*
 ```
 
 ### Configuration de la ressource
