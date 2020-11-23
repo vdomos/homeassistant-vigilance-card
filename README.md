@@ -36,8 +36,7 @@ lovelace:
 
 ### Ajout de la "custom-card"
 
-Ajouter la nouvealle "card" dans la GUI home-assistant en ajoutant une *custom-card* sur une vue en renseigant avec le type **custom:meteofrance-vigilance** et 
-l'entité **sensor.<DEPARTEMENT>_weather_alert** *meteo-france*
+Ajouter la nouvealle "card" dans la GUI home-assistant en ajoutant une carte *custom-card*.
 
 
 **Example:**
