@@ -2,21 +2,23 @@
 
 Cette carte affiche la vigilance Météo-France en s'appuyant sur l'entité **sensor.<DEPARTEMENT>_weather_alert** de l'intégration **meteo-france**
 
-![vigilance1](img/Meteo-France_Vigilance_Card_1.png)
+![vigilance1](Meteo-France_Vigilance_Card_1.png)
 
 ## Installation
 
 ### Copie des fichiers
 
-Installe `raininhourforecast card` en copiant le fichier  `meteofrance/meteofrance-raininhourforecast.js` du dépot dans `<config directory>/www/meteofrance/meteofrance-raininhourforecast.js` de l'instance Home Assistant.
+Installe `vigilance card` en copiant le fichier  `meteofrance/meteofrance-vigilance.js` du dépot dans `<config directory>/www/meteofrance/meteofrance-raininhourforecast.js` de l'instance Home Assistant.
 
 **Example:**
 
+Copier le fichier *meteofrance-vigilance.js* et le répertoire *img* dans le répertoire *meteofrance* créé ci-dessous:
+
 ```bash
+wget https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip
 cd <config directory>/www
 mkdir meteofrance
 cd meteofrance
-wget https://github.com/custom-cards/rmv-card/archive/master.zip
 ```
 
 ### Configuration de la ressource
@@ -44,5 +46,5 @@ type: 'custom:meteofrance-raininhourforecast'
 entity: sensor.nancy_next_rain
 ```
 
-![vigilance1](img/Meteo-France_Vigilance_Card_1.png)
+![vigilance1](Meteo-France_Vigilance_Card_2.png)
 
