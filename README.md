@@ -13,13 +13,13 @@ Copie du fichier `meteofrance-vigilance.js` et répertoire `img` du dépot dans 
 **Example:**
 
 ```bash
-wget -O /tmp/master.zip https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip 
-cd <config directory>/www
-mkdir -p meteofrance/img/vigilance/
-cd meteofrance/
-unzip -j /tmp/master.zip homeassistant-vigilance-card-master/meteofrance-vigilance.js
-cd img/vigilance/
-unzip -j /tmp/master.zip homeassistant-vigilance-card-master/img/vigilance/*
+$ wget -O /tmp/master.zip https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip 
+$ cd <config directory>/www
+$ mkdir -p meteofrance/img/vigilance/
+$ cd meteofrance/
+$ unzip -j /tmp/master.zip homeassistant-vigilance-card-master/meteofrance-vigilance.js
+$ cd img/vigilance/
+$ unzip -j /tmp/master.zip homeassistant-vigilance-card-master/img/vigilance/*
 ```
 
 ### Configuration de la ressource
