@@ -3,6 +3,7 @@
 Cette carte affiche la vigilance Météo-France en s'appuyant sur l'entité **sensor.<DEPARTEMENT>_weather_alert** de l'intégration **meteo-france**
 
 ![vigilance1](Meteo-France_Vigilance_Card_1.png)
+![vigilance1](Meteo-France_Vigilance_Card_2.png)
 
 ## Installation
 
@@ -14,9 +15,9 @@ Copie du fichier `meteofrance-vigilance.js` et répertoire `img` du dépot dans 
 
 ```bash
 $ wget -O /tmp/master.zip https://github.com/vdomos/homeassistant-vigilance-card/archive/master.zip 
-$ cd <config directory>/www
-$ mkdir -p meteofrance/img/vigilance/
-$ cd meteofrance/
+$ cd <config directory>/
+$ mkdir -p www/meteofrance/img/vigilance/
+$ cd www/meteofrance/
 $ unzip -j /tmp/master.zip homeassistant-vigilance-card-master/meteofrance-vigilance.js
 $ cd img/vigilance/
 $ unzip -j /tmp/master.zip homeassistant-vigilance-card-master/img/vigilance/*
@@ -34,6 +35,8 @@ lovelace:
       type: module
 ```
 
+> Redémarrer HA
+
 ### Ajout de la "custom-card"
 
 Ajouter la nouvelle "card" dans la GUI home-assistant en ajoutant une carte *custom-card*.
@@ -43,8 +46,8 @@ Ajouter la nouvelle "card" dans la GUI home-assistant en ajoutant une carte *cus
 
 ```yaml
 type: 'custom:meteofrance-vigilance'
-entity: sensor.nancy_next_rain
+entity: sensor.66_weather_alert
 ```
 
-![vigilance1](Meteo-France_Vigilance_Card_2.png)
+![vigilance1](Meteo-France_Vigilance_Card_3.png)
 
